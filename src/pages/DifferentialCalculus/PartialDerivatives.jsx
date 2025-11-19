@@ -1,5 +1,6 @@
 import React from 'react';
 import MathBlock from '../../components/MathBlock';
+import TangentVisualizer from '../../components/interactive/TangentVisualizer';
 
 const PartialDerivatives = () => {
     return (
@@ -10,6 +11,9 @@ const PartialDerivatives = () => {
                     Let <MathBlock>{'z = f(x, y)'}</MathBlock> be a function of two independent variables <MathBlock>{'x'}</MathBlock> and <MathBlock>{'y'}</MathBlock>.
                     The derivative of <MathBlock>{'z'}</MathBlock> with respect to <MathBlock>{'x'}</MathBlock>, keeping <MathBlock>{'y'}</MathBlock> constant, is called the partial derivative of <MathBlock>{'z'}</MathBlock> w.r.t <MathBlock>{'x'}</MathBlock>.
                 </p>
+
+                <TangentVisualizer />
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
                     <div className="card p-4 border-l-4 border-emerald-500">
                         <h3 className="font-bold text-slate-900">Notation (w.r.t x)</h3>

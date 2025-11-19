@@ -1,5 +1,6 @@
 import React from 'react';
 import MathBlock from '../../components/MathBlock';
+import VectorField from '../../components/interactive/VectorField';
 
 const VectorDifferentiation = () => {
     return (
@@ -14,6 +15,8 @@ const VectorDifferentiation = () => {
                     This represents the velocity vector. The second derivative represents acceleration.
                 </p>
             </section>
+
+            <VectorField />
 
             <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">Vector Differential Operator (Del)</h2>

@@ -1,5 +1,6 @@
 import React from 'react';
 import MathBlock from '../../components/MathBlock';
+import MatrixVisualizer from '../../components/interactive/MatrixVisualizer';
 
 const MatricesIntro = () => {
     return (
@@ -12,6 +13,8 @@ const MatricesIntro = () => {
                     represent linear transformations, and more.
                 </p>
             </div>
+
+            <MatrixVisualizer />
 
             <div className="bg-slate-50 rounded-lg p-6 border border-slate-200">
                 <h2 className="text-xl font-semibold text-slate-900 mb-3">Basic Notation</h2>
